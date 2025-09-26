@@ -6,7 +6,6 @@ const navLinks = [
   { href: "/about/", label: "About" },
   { href: "/services/", label: "Services" },
   { href: "/blog/", label: "Blog" },
-  { href: "/contact/", label: "Contact" },
 ];
 ---
 
@@ -16,7 +15,16 @@ const navLinks = [
       <a href="/" class="text-xl font-bold text-brand-primary hover:text-teal-700 transition-colors">
         Hello Subconscious
       </a>
-      <nav>
+      
+      <!-- Mobile Menu Button (Hamburger) -->
+      <button id="menu-btn" class="md:hidden block text-text-base focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <!-- Desktop Menu (Visible on medium screens and up) -->
+      <nav class="hidden md:flex items-center space-x-6">
         <ul class="flex space-x-6 text-base">
           {navLinks.map(link => {
             const isActive = link.href === currentPath || (link.href !== "/" && currentPath.startsWith(link.href));
@@ -36,7 +44,30 @@ const navLinks = [
             );
           })}
         </ul>
+        <a href="/contact/" class="bg-brand-primary text-white font-semibold py-2 px-6 rounded-full hover:bg-teal-700 transition-colors">
+          Contact
+        </a>
       </nav>
     </div>
   </div>
+
+  <!-- Mobile Menu (Hidden by default, toggled with JS) -->
+  <div id="mobile-menu" class="hidden md:hidden">
+    <div class="px-4 pt-2 pb-4 flex flex-col space-y-4">
+      {navLinks.map(link => (
+        <a href={link.href} class="text-text-base hover:text-brand-primary transition-colors">{link.label}</a>
+      ))}
+      <a href="/contact/" class="text-text-base hover:text-brand-primary transition-colors">Contact</a>
+    </div>
+  </div>
 </header>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
