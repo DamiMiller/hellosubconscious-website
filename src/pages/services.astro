@@ -1,0 +1,50 @@
+---
+import Layout from '@/layouts/Layout.astro';
+
+const services = [
+  {
+    title: "One-on-One Subconscious Coaching",
+    description: "[A detailed description of your primary coaching service. Explain what a session looks like, who it's for, and the outcomes they can expect. Mention techniques used, e.g., guided meditation, visualization, etc.]",
+    price: "$150 / session"
+  },
+  {
+    title: "Clarity & Purpose Package (4 Sessions)",
+    description: "[Describe a package deal. This is great for clients who want to work on a specific goal over a period of time. Highlight the benefits of a multi-session commitment.]",
+    price: "$550"
+  },
+  {
+    title: "Corporate Wellness Workshops",
+    description: "[An offering for businesses. Explain how your techniques can reduce stress, improve focus, and boost team morale in a professional environment. Mention that it can be customized.]",
+    price: "Inquire for pricing"
+  }
+]
+---
+
+<Layout
+  title="Services"
+  description="Explore the services offered to help you connect with your subconscious and achieve your goals."
+>
+  <div class="container mx-auto px-4 py-16">
+    <div class="text-center max-w-3xl mx-auto">
+      <h1 class="text-4xl font-bold text-text-base mb-4">How We Can Work Together</h1>
+      <p class="text-xl text-text-muted">
+        [A short paragraph explaining that your services are tailored to meet individual needs, whether for personal growth, overcoming specific blocks, or professional development.]
+      </p>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map(service => (
+        <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-200 flex flex-col">
+          <h2 class="text-2xl font-bold text-text-base mb-3">{service.title}</h2>
+          <p class="text-text-muted flex-grow mb-6">{service.description}</p>
+          <div class="mt-auto">
+            <p class="text-lg font-semibold text-brand-primary mb-4">{service.price}</p>
+            <a href="/contact" class="w-full text-center bg-brand-primary text-white font-semibold py-2 px-6 rounded-full hover:bg-teal-700 transition-colors">
+              Book a Consultation
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>
