@@ -453,13 +453,16 @@ export default function ProgramPage() {
               Think clearly. Feel steadily. Act confidently.
             </p>
           </div>
-          <a
-            href="https://app.gohighlevel.com/widget/booking/o8RG9H5cv38aWildtErv" target="_blank" rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-2 rounded-full border border-[#c9a96e]/40 bg-[#c9a96e]/10 px-8 py-3.5 text-base font-medium text-[#c9a96e] transition-all hover:bg-[#c9a96e]/20 hover:border-[#c9a96e]/60"
-          >
-            Book a Call
-            <span aria-hidden="true">&rarr;</span>
-          </a>
+          <div className="mt-10">
+            <iframe 
+              src="https://brandedlink.lifeaftermigraines.com/widget/booking/o8RG9H5cv38aWildtErv" 
+              style={{width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px'}} 
+              scrolling="no" 
+              id="o8RG9H5cv38aWildtErv_1774759390955"
+              title="Schedule A Clarity Call"
+            />
+          </div>
+          <script src="https://brandedlink.lifeaftermigraines.com/js/form_embed.js" type="text/javascript"></script>
         </div>
       </section>
     </>
