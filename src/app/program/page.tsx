@@ -453,10 +453,21 @@ export default function ProgramPage() {
               Think clearly. Feel steadily. Act confidently.
             </p>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 rounded-2xl border border-slate-700/50 bg-slate-800/20 p-6 transition-all hover:border-slate-600/50">
+            <div className="mb-4 text-center">
+              <h3 
+                className="text-2xl text-white"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                Schedule Your Clarity Call
+              </h3>
+              <p className="mt-2 text-sm text-slate-400">
+                Book a time that works for you
+              </p>
+            </div>
             <iframe 
-              src="https://brandedlink.lifeaftermigraines.com/widget/booking/o8RG9H5cv38aWildtErv?dark=1&color=#c9a96e&bg=#0f172a" 
-              style={{width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px'}} 
+              src="https://brandedlink.lifeaftermigraines.com/widget/booking/o8RG9H5cv38aWildtErv" 
+              style={{width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px', borderRadius: '12px'}} 
               scrolling="no" 
               id="o8RG9H5cv38aWildtErv_1774759390955"
               title="Schedule A Clarity Call"
