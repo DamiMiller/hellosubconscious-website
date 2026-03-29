@@ -455,7 +455,7 @@ export default function ProgramPage() {
           </div>
           <div className="mt-10">
             <iframe 
-              src="https://brandedlink.lifeaftermigraines.com/widget/booking/o8RG9H5cv38aWildtErv?theme=dark&primary_color=%23c9a96e&background_color=%230f172a&text_color=%23ffffff&mode=dark&appearance=dark" 
+              src="https://brandedlink.lifeaftermigraines.com/widget/booking/o8RG9H5cv38aWildtErv?dark=1&color=#c9a96e&bg=#0f172a" 
               style={{width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px'}} 
               scrolling="no" 
               id="o8RG9H5cv38aWildtErv_1774759390955"
