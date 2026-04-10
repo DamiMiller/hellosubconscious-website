@@ -105,9 +105,39 @@ function Footer() {
           >
             damian@hellosubconscious.com
           </a>
-          <p className="mt-4 text-xs text-slate-600">
-            &copy; {new Date().getFullYear()} Hello Subconscious. All rights
-            reserved.
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-xs text-slate-400">
+            <Link
+              href="/privacy"
+              className="transition-colors hover:text-[#c9a96e]"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="/terms"
+              className="transition-colors hover:text-[#c9a96e]"
+            >
+              Terms of Service
+            </Link>
+            <Link
+              href="/disclaimer"
+              className="transition-colors hover:text-[#c9a96e]"
+            >
+              Disclaimer
+            </Link>
+            <Link
+              href="/text-updates"
+              className="transition-colors hover:text-[#c9a96e]"
+            >
+              Text Updates
+            </Link>
+          </nav>
+          <p className="mt-2 text-xs leading-relaxed text-slate-600">
+            Hello Subconscious is a trade name of A New Hope Hypnosis, LLC.
+            <br />
+            4001 Main St, Suite 204, Philadelphia, PA 19127.
+            <br />
+            &copy; {new Date().getFullYear()} A New Hope Hypnosis, LLC. All
+            rights reserved.
           </p>
         </div>
       </div>
