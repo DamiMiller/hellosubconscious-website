@@ -131,13 +131,8 @@ function Footer() {
               Text Updates
             </Link>
           </nav>
-          <p className="mt-2 text-xs leading-relaxed text-slate-600">
-            Hello Subconscious is a trade name of A New Hope Hypnosis, LLC.
-            <br />
-            4001 Main St, Suite 204, Philadelphia, PA 19127.
-            <br />
-            &copy; {new Date().getFullYear()} A New Hope Hypnosis, LLC. All
-            rights reserved.
+          <p className="mt-2 text-xs text-slate-600">
+            &copy; {new Date().getFullYear()} A New Hope Hypnosis, LLC.
           </p>
         </div>
       </div>
