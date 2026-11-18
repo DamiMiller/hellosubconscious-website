@@ -352,27 +352,27 @@ export default function ProgramPage() {
                 duration: "3-Month Program",
                 sessions: "12 Weeks • 12 Sessions",
                 price: "$5,000",
-                planDown: "$1,150",
-                planMonthly: "$2,300/mo × 2",
-                planTotal: "$5,750",
+                planDown: "$2,000",
+                planMonthly: "$1,800/mo × 2",
+                planTotal: "$5,600",
                 featured: false,
               },
               {
                 duration: "6-Month Program",
                 sessions: "24 Weeks • 24 Sessions",
                 price: "$8,000",
-                planDown: "$1,840",
-                planMonthly: "$1,840/mo × 4",
-                planTotal: "$9,200",
+                planDown: "$2,000",
+                planMonthly: "$1,400/mo × 5",
+                planTotal: "$9,000",
                 featured: true,
               },
               {
                 duration: "12-Month Program",
                 sessions: "52 Weeks • Weekly Sessions",
-                price: "$13,000",
-                planDown: "$2,990",
-                planMonthly: "$1,993/mo × 6",
-                planTotal: "$14,950",
+                price: "$15,000",
+                planDown: "$3,000",
+                planMonthly: "$1,400/mo × 10",
+                planTotal: "$17,000",
                 featured: false,
               },
             ].map((plan) => (
@@ -414,7 +414,7 @@ export default function ProgramPage() {
                     Payment Plan
                   </p>
                   <p className="mt-2 text-sm text-slate-300">
-                    20% Down:{" "}
+                    Down:{" "}
                     <span className="text-white">{plan.planDown}</span>
                   </p>
                   <p className="mt-1 text-sm text-slate-300">
